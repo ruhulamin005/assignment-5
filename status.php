@@ -7,11 +7,11 @@ setcookie("username",$_SESSION['username'], time()-86400);
 
 
 echo isset($_SESSION['username']);
-if(isset($_SESSION['username'])]))
+if(isset($_SESSION['username']))
 {
 
   echo "Session started";
-  include 'landing.php';
+  header("location: landing.php");
 
 
 }
