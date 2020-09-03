@@ -8,7 +8,15 @@
 
 
 
+
+
+
     <?php
+
+    //session checking
+
+    //session_start();
+
 
 
     //opening file
@@ -36,7 +44,14 @@
     if($text[0]==$username && $text[1]==$password)
     {
 
-      include 'landing.html';
+      setcookie("username",$username,time()-86400);
+      setcookie("password",$password,time()-86400);
+      $_SESSION['username'] = "$username";
+      $_SESSION['password'] = "$password";
+      //echo $_SESSION['username'];
+      //echo $_SESSION['password'];
+
+      include 'landing.php';
     }
     else {
       echo "Pass doesnot match";

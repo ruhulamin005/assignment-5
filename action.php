@@ -20,6 +20,7 @@ fwrite($myfile, $password);
 fclose($myfile);
 
 echo "Sign Up successful";
+include'index.html';
 
 
  ?>
