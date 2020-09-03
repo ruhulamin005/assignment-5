@@ -1,5 +1,5 @@
 <?php
-session_start();
+
   //setcookie("username",$username,time()-86400);
   //setcookie("password",$password,time()-86400);
   $_SESSION['username'];
@@ -13,7 +13,7 @@ echo isset($_SESSION['username'],$_SESSION['password']);
 
   if(isset($_SESSION['username'],$_SESSION['password'])!=0)
   {
-    //session_start();
+    session_start();
     //setcookie("username",$username,time()+86400);
     //setcookie("password",$password,time()+86400);
     echo "Session started";

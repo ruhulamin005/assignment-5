@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -15,7 +17,7 @@
 
     //session checking
 
-    //session_start();
+    session_start();
 
 
 
@@ -52,7 +54,7 @@
       echo $_SESSION['username'];
       echo $_SESSION['password'];
 
-      header("location:landing.php");
+      include 'landing.php';
     }
     else {
       echo "Pass doesnot match";

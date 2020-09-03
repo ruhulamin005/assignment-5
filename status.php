@@ -20,13 +20,16 @@ if(isset($_SESSION['username'],$_SESSION['password'])!=0)
 {
 
   echo "Session started";
-  header("location: landing.php");
+  //header("location: landing.php");
+  include 'landing.php';
 
 
 }
 else {
   echo "No Session";
-  header("location: login.html");
+  session_start();
+  //header("location: login.html");
+  include 'login.html';
 }
 
 
