@@ -51,14 +51,14 @@
       //setting session value
       $_SESSION['username'] = "$username";
       $_SESSION['password'] = "$password";
-      echo $_SESSION['username'];
-      echo $_SESSION['password'];
+      //echo $_SESSION['username'];
+      //echo $_SESSION['password'];
 
       include 'landing.php';
     }
     else {
       echo "Pass doesnot match";
-      header("location:login.html");
+      include 'login.html';
     }
     ?>
 

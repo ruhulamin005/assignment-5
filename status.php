@@ -13,21 +13,21 @@ $_SESSION['password'];
 
 
 
-echo isset($_SESSION['username'],$_SESSION['password']);
+//echo isset($_SESSION['username'],$_SESSION['password']);
 
 
 if(isset($_SESSION['username'],$_SESSION['password'])!=0)
 {
 
-  echo "Session started";
+  //echo "Session started";
   //header("location: landing.php");
   include 'landing.php';
 
 
 }
 else {
-  echo "No Session";
-  session_start();
+  //echo "No Session";
+  //session_start();
   //header("location: login.html");
   include 'login.html';
 }

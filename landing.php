@@ -9,14 +9,14 @@
   //echo $_SESSION['password'];
 
 
-echo isset($_SESSION['username'],$_SESSION['password']);
+//echo isset($_SESSION['username'],$_SESSION['password']);
 
   if(isset($_SESSION['username'],$_SESSION['password'])!=0)
   {
-    session_start();
+    //session_start();
     //setcookie("username",$username,time()+86400);
     //setcookie("password",$password,time()+86400);
-    echo "Session started";
+    //echo "Session started";
 
 
   }
@@ -31,6 +31,7 @@ echo isset($_SESSION['username'],$_SESSION['password']);
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <title></title>
   </head>
   <body>
@@ -45,8 +46,13 @@ echo isset($_SESSION['username'],$_SESSION['password']);
   <br>
   <br>
 
-  <a href="status.php" class="w3-btn w3-black">Login</a>
-  <a href="logout.php" class="w3-btn w3-black">logout</a>
+  <div class="container">
+    <a href="status.php" class="w3-btn w3-black">Login  </a>
+    <a href="logout.php" class="w3-btn w3-black">logout  </a>
+    <a href="index.html" class="w3-btn w3-black"> Main</a>
+  </div>
+
+
 
   </body>
 </html>
